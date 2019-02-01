@@ -6,7 +6,6 @@
  *
  */
 ?>
-
 <!doctype html>
 
   <html class="no-js"  <?php language_attributes(); ?>>
@@ -55,7 +54,7 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-MNCV9C9');</script>
 		<!-- End Google Tag Manager -->
-		
+
 	</head>
 			
 	<body <?php body_class(); ?>>
