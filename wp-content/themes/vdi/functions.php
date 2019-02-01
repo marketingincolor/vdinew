@@ -2,7 +2,7 @@
 /** 
  * For more info: https://developer.wordpress.org/themes/basics/theme-functions/
  *
- */			
+ */
 	
 // Theme support options
 require_once(get_template_directory().'/functions/theme-support.php'); 
@@ -17,16 +17,19 @@ require_once(get_template_directory().'/functions/enqueue-scripts.php');
 require_once(get_template_directory().'/functions/menu.php'); 
 
 // Register sidebars/widget areas
-require_once(get_template_directory().'/functions/sidebar.php'); 
+// require_once(get_template_directory().'/functions/sidebar.php'); 
 
 // Makes WordPress comments suck less
-require_once(get_template_directory().'/functions/comments.php'); 
+// require_once(get_template_directory().'/functions/comments.php'); 
 
 // Replace 'older/newer' post links with numbered navigation
 require_once(get_template_directory().'/functions/page-navi.php'); 
 
+// Sharpspring functions for Ninja Forms
+require_once(get_template_directory().'/functions/sharpspring.php'); 
+
 // Adds support for multiple languages
-require_once(get_template_directory().'/functions/translation/translation.php'); 
+// require_once(get_template_directory().'/functions/translation/translation.php'); 
 
 // Adds site styles to the WordPress editor
 // require_once(get_template_directory().'/functions/editor-styles.php'); 
@@ -38,7 +41,7 @@ require_once(get_template_directory().'/functions/translation/translation.php');
 // require_once(get_template_directory().'/functions/related-posts.php'); 
 
 // Use this as a template for custom post types
-// require_once(get_template_directory().'/functions/custom-post-type.php');
+require_once(get_template_directory().'/functions/custom-post-type.php');
 
 // Customize the WordPress login menu
 // require_once(get_template_directory().'/functions/login.php'); 

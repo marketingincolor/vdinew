@@ -9,7 +9,14 @@
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
 		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
+			<?php
+				if (is_page_template('front-page.php')) {
+					$logo = 'vdi-logo-white.png';
+				}else{
+					$logo = 'vdi-header-logo.png';
+				}
+			?>
+			<li><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>"></a></li>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
