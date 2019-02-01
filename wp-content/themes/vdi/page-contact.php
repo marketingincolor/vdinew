@@ -25,7 +25,6 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<address><?php the_field('company_phone'); ?> | <?php the_field('company_fax'); ?></address>
 					</div>
 					<?php the_content(); ?>
-					<img src="<?php the_field('map_image'); ?>" alt="VDI Location" class="map">
 				</div>
 			</div>
 		</div>
