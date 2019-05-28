@@ -48,3 +48,8 @@ require_once(get_template_directory().'/functions/custom-post-type.php');
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/functions/admin.php'); 
+
+function acf_wysiwyg_remove_wpautop() {
+    remove_filter('acf_the_content', 'wpautop' );
+}
+add_action('acf/init', 'acf_wysiwyg_remove_wpautop', 15);
