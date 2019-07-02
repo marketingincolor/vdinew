@@ -21,7 +21,15 @@ get_header(); ?>
 <div class="content">
 	<div class="inner-content grid-x grid-margin-x grid-padding-x">
 		<main class="main small-10 small-offset-1 large-8 large-offset-2 cell" role="main">
-		
+
+		<?php if(get_field('capability_image')) { ?>
+			<div>
+				<section class="entry-content" style="padding-left:0px; padding-right:0px;">
+					<img src="<?php the_field('capability_image'); ?>" alt="<?php the_title(); ?>">
+				</section>
+			</div>
+		<?php } ?>
+
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
 		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
